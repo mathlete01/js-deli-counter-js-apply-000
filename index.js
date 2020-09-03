@@ -2,8 +2,6 @@
 
 function takeANumber(line, name){
   line.push(name)
-  //console.log("line = " + line)
-  //console.log(`Welcome, ${name}. You are number ${line.length} in line.`)
   return(`Welcome, ${name}. You are number ${line.length} in line.`)
 }
 
@@ -11,11 +9,12 @@ function takeANumber(line, name){
 
 function nowServing(line){
   if(line.length > 0){
+    /*
     var announcement = `Currently serving ${line[0]}.`
-    //console.log("BEFORE: line = " + line)
     line.shift()
-    //console.log("AFTER: line = " + line)
     return(announcement)
+    */
+    return(`Currently serving ${line.shift()}.`)
   }else{
     return("There is nobody waiting to be served!")
   }
